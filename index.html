@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Website Title -->
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Sweat Smoothies</h1>
+    
+    <form id="smoothie-form" method="post">
+      <div class="container">
+        <div class="row">
+      <div class="col">
+      <label for="name">Smoothie Name:</label>
+      <input type="text" id="smoothie-name" name="name" required>
+      </div>
+       
+      <div class="col">
+      <label for="base">Select a base:</label>
+      <select id="smoothie-base" name="base" required>
+        <option value="milk">Milk</option>
+        <option value="yogurt">Yogurt</option>
+        <option value="juice">Juice</option>
+      </select>
+      </div>
+    </div>
+       <div class="row">
+      <div class="col">
+      <label for="fruits">Select fruits:</label>
+      <select id="smoothie-fruits" name="fruits[]" multiple   required>
+        <option value="banana">Banana</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="blueberry">Blueberry</option>
+        <option value="mango">Mango</option>
+        <option value="pineapple">Pineapple</option>
+        <option value="kiwi">Kiwi</option>
+        <option value="peach">Peach</option>
+      </select>
+       </div>
+     
+    
+       <div class="col">
+      <label for="vegetables">Select vegetables:</label>
+      <select id="smoothie-vegetables" name="vegetables[]"  multiple  required>
+        <option value="spinach">Spinach</option>
+        <option value="kale">Kale</option>
+        <option value="cucumber">Cucumber</option>
+        <option value="celery">Celery</option>
+        <option value="carrot">Carrot</option>
+        <option value="beet">Beet</option>
+        <option value="ginger">Ginger</option>
+      </select>
+       </div>
+    <div class="col">
+      <label for="extras">Select Extras:</label>
+      <select id="smoothie-extras" name="extras[]" multiple   required>
+        <option value="Protein powder">Protein powder</option>
+        <option value="Nut butter">Nut butter</option>
+        <option value="Chia Seeds">Chia Seed</option>
+        <option value="Cinnamon">Cinnamon Spices</option>
+      </select>
+     </div>
+   </div>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" required>
+
+      <button type="submit" id="order-button">Order Now</button>
+    </div>
+    </form>
+     <div class="row describe">
+    <div id="smoothie-description" style=""></div>
+    <div id="smoothie-image"> </div>
+     </div>
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>
