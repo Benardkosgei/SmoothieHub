@@ -1,0 +1,89 @@
+ /* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color:#e6e6ff;
+}
+
+/* Center the page content */
+h1, form, #smoothie-description {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container{
+  width: 700px;
+  display: grid;
+  background: #fff;
+  padding: 10px;
+   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.row{
+  display:flex;
+}
+.col{
+  width: 100%;
+  margin: 0 5px;
+}
+/* Style the form inputs */
+input, select {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select[multiple] {
+  height: 150px;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #005F6B;
+}
+
+/* Style the smoothie description  and image section*/
+.row.describe{
+  margin-top: 30px !important;
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #f2f2f2;
+}
+#smoothie-description {
+  padding: 20px;
+  
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.5;
+ 
+}
+#smoothie-image{
+  width: 150px;
+  background-color:#fff;
+}
